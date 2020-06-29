@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SignUp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+    <link href="css/signupRes.css" rel="stylesheet" />
+</head>
+
+<body class="pt-4">
+
+    <!--Main navigation-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+        <a hred="#" class="navbar-brand">Yeonha</a>
+
+
+    </nav>
+    <!--Signup container-->
+    <div class="container my-5 mx-auto" id="container">
+        <div class="form-container sign-up-container mx-auto">
+            <form class="signupForm mx-auto">
+                <h1 class="formHeader">Sign Up</h1>
+                <!--Full name-->
+                <div class="form-group">
+                    <label for="fullName">FULL NAME</label>
+                    <span class="fas fa-user icon"></span>
+                    <input type="text" name="fullName" id="fullName">
+                </div>
+
+                <!--Email-->
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <span class="fas fa-envelope icon"></span>
+                    <input type="email" name="email" id="email" >
+                </div>
+
+                <!--Password-->
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <span id="eye" class="fas fa-eye"></span>
+                    <input type="password" name="password" id="password" onkeyup="strength()" required>
+                </div>
+                <!--Password length requirement-->
+                <div class="col-12 wrap">
+                    <p class="strength" id="length">Must be at least 10 characters</p>
+                </div>
+
+                <!--Confirm password-->
+                <div class="form-group">
+                    <label for="password">CONFIRM PASSWORD</label>
+                    <span id="eyeConfirm" class="fas fa-eye"></span>
+                    <input type="password" name="confirmPassword" id="confirmPassword" onkeyup="match()" required>
+                </div>
+                <!--Comfirm password requirement-->
+                <div class="col-12 wrap">
+                    <p class="match" id="match">Please confirm your password</p>
+                </div>
+
+                <!--Signup button-->
+                <div class="col-12 text-right next">
+                    <button id="submit" type="submit" name="submit" class="btn btn-primary"  disabled>NEXT</button>
+                </div>
+
+            </form>
+        </div>
+  
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/signUp.js"></script>
+</body>
+
+</html>

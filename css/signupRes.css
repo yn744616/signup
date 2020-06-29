@@ -1,0 +1,191 @@
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background: #EBEFF3;
+    max-height: 600px;
+}
+
+.navbar{
+    background: #FFF;
+    margin-bottom: 5%;
+}
+
+.container{
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: auto;
+    max-width: 100%;
+    min-height: 600px;
+    height: auto;
+    margin: 0px 60px;
+    position: relative;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.sign-up-container{
+    width: 70%;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.next{
+    padding: 0;
+}
+
+.formHeader {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: x-large;  
+}
+
+.errorBox {
+    border: 2px solid red;
+}
+
+.form-group{
+    width: 100%;
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    align-items: flex-start;
+    color: #9EA0A3;
+    margin-bottom: 0;
+    font-size: 11pt;
+}
+
+.form-group input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #2485CC;
+    width: 100%;
+    padding-right: 30px;
+}
+
+.form-group .icon {
+    position: absolute;
+    transform: translate(0, -50%);
+    right: 15px;
+    top: 70%;
+    font-size: 100%;
+    color: #2485CC;
+}
+
+.form-group .fa-eye {
+    position: absolute;
+    transform: translate(0, -50%);
+    right: 15px;
+    top: 70%;
+    font-size: 100%;
+    color: #7a797a;
+}
+
+
+.btn {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 9%;
+    background-color: #2485CC;
+    border-color: #2485CC;
+}
+
+
+.info-container{
+    display: none;
+}
+
+.wrap{
+    padding: 0;
+    margin-top: 2%;
+}
+
+.fa-eye{
+    cursor: pointer;
+}
+.strength {
+    width: 100%;
+    background-color: #FBB235;
+    text-align: center;
+    /* color: #9EA0A3; */
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.match {
+    width: 100%;
+    background-color: #FBB235;
+    text-align: center;
+    /* color: #9EA0A3; */
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.error{
+    color: red;
+}
+
+@media only screen and (min-width: 481px){
+    .sign-up-container{
+        width: 70%;
+        height: 100%;
+    }
+
+    .formHeader {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: x-large;  
+    }
+
+    .btn {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 3%;
+        background-color: #2485CC;
+        border-color: #2485CC;
+    }
+
+}
+
+@media only screen and (min-width: 769px){
+    body{
+        background: #EBEFF3;
+        max-height: 1280px;
+    }
+ 
+    .container{
+        background-color: #FFF;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        width: auto;
+        max-width: 50%;
+        min-height: 550px;
+        height: auto;
+        margin: 0px 60px;
+        position: relative;
+        overflow: auto;
+        margin-bottom: 0;
+    }
+
+    .formHeader {
+        margin-top: 8%;
+        margin-bottom: 5%;
+        font-size: x-large;  
+    }
+
+    
+}
+
+
